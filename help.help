@@ -1,0 +1,29 @@
+Hello, I am your guide
+
+If you are an admin you may enter as admin.
+As admin you can index new files, hide files from index and unhide all files.
+	Add files: The addition of new files are saved at "src" folder 
+		and indexing them right away
+
+	Hide files: You should hide files just from "storage" 
+		or else the index will not hide the chosen file
+
+	Unhide files: Remove the index with the removed files
+
+As user you may just search for words and initiate some query.
+You may see the content of the file if you double click on an item in the table.
+Some queries for example:
+	!(mountain) - > open files "1. Battle Of The Baltic.txt" 
+		and "2. The Battle Of Lexington.txt"
+
+	!((!(about | lexington)) & (!(love | about))) - > open files 
+		"2. The Battle Of Lexington.txt" 
+		(because of stop words(about is in stop word list))
+    NOTE: if search for "about", would search from index file without stoplists
+
+	"Then Denmark blessed" - > open files "1. Battle Of The Baltic.txt"
+
+	advance - > open files "3. The Battle Of New Orleans.txt"
+
+	red* - > open files "3. The Battle Of New Orleans.txt"
+	                    "2. The Battle Of Lexington.txt"
